@@ -1,23 +1,19 @@
-import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import React from "react";
 
-const HomePage = async () => {
+const AllShoesPage = async () => {
   const res = await fetch("http://localhost:5000/shoes", {
-    next: {
-      revalidate: 5,
-    },
+    catch: "no-store",
   });
   const shoes = await res.json();
 
-  throw new Error("Error from homepage");
-
   return (
-    <div className="my-10">
-      <div className="mx-5 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {shoes?.slice(0, 3).map((shoe) => {
+    <div>
+      <h1 className="text-center font-semibold text-xl">All Shoes</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 mx-4 gap-4 my-10">
+        {shoes?.map((shoe) => {
           return (
-            <div key={shoe.id} className="card bg-base-100 w-96 shadow-xl">
+            <div key={shoe.id} className="card bg-base-100 w-96 shadow-xl m-4">
               <figure>
                 <Image
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -48,14 +44,8 @@ const HomePage = async () => {
           );
         })}
       </div>
-
-      <div className="text-center my-5">
-        <button className="px-5 py-3 rounded-lg bg-black text-white">
-          <Link href={"/allShoes"}>See More</Link>
-        </button>
-      </div>
     </div>
   );
 };
 
-export default HomePage;
+export default AllShoesPage;

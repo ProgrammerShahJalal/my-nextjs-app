@@ -1,0 +1,46 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "title": "Classic Leather Sneakers",
+      "description": "Timeless leather sneakers with a sleek design, perfect for casual and semi-formal outfits.",
+      "regularPrice": 89.99,
+      "recentPrice": 66.56
+    },
+    {
+      "id": 2,
+      "title": "Running Shoes",
+      "description": "Lightweight and breathable running shoes with superior cushioning for daily runs.",
+      "regularPrice": 120.5,
+      "recentPrice": 55.52
+    },
+    {
+      "id": 3,
+      "title": "High-Top Canvas Shoes",
+      "description": "Durable high-top canvas shoes, ideal for a laid-back and comfortable style.",
+      "regularPrice": 64.99,
+      "recentPrice": 42.67
+    },
+    {
+      "id": 4,
+      "title": "Suede Ankle Boots",
+      "description": "Stylish suede ankle boots with a comfortable fit and excellent grip for all-day wear.",
+      "regularPrice": 150.0,
+      "recentPrice": 104.88
+    },
+    {
+      "id": 5,
+      "title": "Slip-On Loafers",
+      "description": "Elegant slip-on loafers crafted with fine leather, perfect for business casual attire.",
+      "regularPrice": 110.75,
+      "recentPrice": 99.99
+    },
+    {
+      "id": 6,
+      "title": "Trail Hiking Boots",
+      "description": "Rugged and waterproof hiking boots designed for tough terrains and long-lasting comfort.",
+      "regularPrice": 135.45,
+      "recentPrice": 124.21
+    }
+  ]
+}
